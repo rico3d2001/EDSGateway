@@ -21,7 +21,7 @@ namespace APIGatewayEDS.Controllers
             _httpClient = httpClient;
         }
 
-        [AllowAnonymous]
+        //[AllowAnonymous]
         [HttpGet("ObterContratos/{idOrganizacao}")]
         public async Task<IActionResult> ObterContratos(string idOrganizacao)
         {
@@ -46,7 +46,7 @@ namespace APIGatewayEDS.Controllers
 
         }
 
-        [AllowAnonymous]
+        //[AllowAnonymous]
         [HttpPost("IniciarContrato")]
         public async Task<IActionResult> IniciarContrato(IniciarContratoCommand command)
         {
