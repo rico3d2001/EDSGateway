@@ -46,7 +46,7 @@ namespace APIGatewayEDS.Controllers
 
         }
 
-        //[AllowAnonymous]
+        [AllowAnonymous]
         [HttpPost("IniciarContrato")]
         public async Task<IActionResult> IniciarContrato(IniciarContratoCommand command)
         {
